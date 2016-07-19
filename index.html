@@ -53,6 +53,139 @@
         <!-- /.container -->
     </nav>
 
+ <!-- Full Width Image Header -->
+    <header class="header-image">
+        <div class="headline">
+            <div class="container">
+                <h1>EMMET TOOLKIT</h1>
+                <h2>Will Knock Your Socks Off</h2>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <hr class="featurette-divider">
+
+        <!-- Section BASICS -->
+        <div class="featurette" id="basics">
+            <img class="featurette-image img-circle img-responsive pull-right" src="logo.png">
+            <h2 class="featurette-heading">Les principes généraux d'EMMET
+                <span class="text-muted">Commandes de bases</span>
+            </h2>
+            <section id="lGEN" class="general">
+      <div class="line-icon"></div>
+      <div class="container-fluid Gen">
+          <h1>Les Principes</h1>
+          <div class="row">
+              <div class="col-sm-5 col-sm-offset-2">
+                  <h3><code>Ctr + shift + Y </code>&nbsp;&nbsp;Effectuer un calcul</h3>
+                  <dl class="list-inline">
+                  <!-- li>p -->
+                     <dt>24/16</dt> <dd>1.25</dd>
+
+                  </dl>
+                  <h3><code> &gt;</code>&nbsp;&nbsp;Ajouter un élément enfant (child)</h3>
+                  <dl class="list-inline">
+                  <!-- li>p -->
+                     <dt>li&gt;p</dt> <dd>&lt;li&gt;</dd>
+                           <dd class="spacer">&lt;p&gt;&lt;/p&gt;</dd>
+                     <dd>&lt;/li&gt;</dd>
+                  <!-- ul>li>p -->
+                     <dt>ul&gt;li&gt;p</dt>
+                          <dd>&lt;ul&gt;</dd>
+                              <dd class="spacer">&lt;li&gt;</dd>
+                                     <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                              <dd class="spacer">&lt;/li&gt;</dd>
+                          <dd>&lt;ul&gt;</dd>
+                  </dl>
+
+                  <h3><code>+</code>&nbsp;&nbsp;Ajouter un élément frère (sibling)</h3>
+                  <dl class="list-inline">
+                  <!-- ul>li>p+a -->
+                    <dt>ul&gt;li&gt;p+a</dt>
+                         <dd>&lt;ul&gt;</dd>
+                             <dd class="spacer">&lt;li&gt;</dd>
+                                    <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                    <dd class="twoSpacer">&lt;a href=&quot;&quot;&gt;&lt;/a&gt;</dd>
+                             <dd class="spacer">&lt;/li&gt;</dd>
+                         <dd>&lt;ul&gt;</dd>
+                  </dl>
+
+                  <h3><code> *</code>&nbsp;&nbsp;multiplier les éléments</h3>
+                  <dl class="list-inline">
+                  <!-- ul>li*3>p+img -->
+                    <dt>ul&gt;li*3&gt;p+img</dt>
+                         <dd>&lt;ul&gt;</dd>
+                             <dd class="spacer">&lt;li&gt;</dd>
+                                    <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                    <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                             <dd class="spacer">&lt;/li&gt;</dd>
+                             <dd class="spacer">&lt;li&gt;</dd>
+                                    <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                    <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                             <dd class="spacer">&lt;/li&gt;</dd>
+                             <dd class="spacer">&lt;li&gt;</dd>
+                                    <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                    <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                             <dd class="spacer">&lt;/li&gt;</dd>
+                         <dd>&lt;ul&gt;</dd>
+                  </dl>
+            </div>
+            <!--  Séparation en colonnes -->
+            <div class="col-sm-5">
+                  <h3><code> .</code>&nbsp;&nbsp;Ajouter un nom de classe</h3>
+                  <dl class="list-inline">
+                  <!-- ul class=wrapper -->
+                     <dt>ul.wrapper</dt><dd>&lt;ul class=&quot;wrapper&quot;&gt;</dd><dd>&lt;/ul&gt;</dd>
+                     <dt>.container</dt><dd>&lt;div class=&quot;container&quot;&gt;</dd><dd>&lt;/div&gt;</dd>
+                  </dl>
+                  <h3><code>#</code>&nbsp;&nbsp;Ajouter un id</h3>
+                  <dl class="class-inline">
+                  <!-- ul class=wrapper -->
+                     <dt>#entete</dt><dd>&lt;section id=&quot;entete&quot;&gt;</dd><dd>&lt;/section&gt;</dd>
+                  </dl>
+                  <h3><code>( )</code>&nbsp;&nbsp;Grouper des éléments</h3>
+                  <dl class="class-inline">
+                  <!-- ul class=wrapper -->
+                  <!-- ul>li*3>p+img -->
+                    <dt>ul&gt;(li&gt;p+img+a)+li*2&gt;p+img</dt>
+                         <dd>&lt;ul&gt;</dd>
+                             <dd class="spacer">&lt;li&gt;<span class="spacer"></span><mark>(li&gt;p+img+a)</mark></dd>
+                                    <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                    <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                                    <dd class="twoSpacer">&lt;a href=&quot;&quot;&gt;&lt;/a&gt;</dd>
+                             <dd class="spacer">&lt;/li&gt;</dd>
+                             <dd class="spacer">&lt;li&gt;</dd>
+                                    <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                    <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                             <dd class="spacer">&lt;/li&gt;</dd>
+                             <dd class="spacer">&lt;li&gt;</dd>
+                                    <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                    <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                             <dd class="spacer">&lt;/li&gt;</dd>
+                             <dd class="spacer">&lt;li&gt;</dd>
+                                    <dd class="twoSpacer">&lt;p&gt;&lt;/p&gt;</dd>
+                                    <dd class="twoSpacer">&lt;img src=&quot;&quot;alt=&quot;&quot; /&gt;</dd>
+                             <dd class="spacer">&lt;/li&gt;</dd>
+                         <dd>&lt;ul&gt;</dd>
+                    </dl>
+                    <h3><code>{ }</code>&nbsp;&nbsp;Insérer du texte dans un élément</h3>
+                    <dl class="list-inline">
+                    <!-- ul class=wrapper -->
+                       <dt>a{click me}</dt><dd>&lt;a href=&quot;&quot;&gt;click me&lt;&gt;/a&gt;</dd>
+                    </dl>
+              </div>
+          </div>
+
+          <p><a class="btn btn-primary btn-lg" href="http://docs.emmet.io/" role="button">En savoir+</a></p>
+    </div>
+  </section>
+        </div>
+
+        
 
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
